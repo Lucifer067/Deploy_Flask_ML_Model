@@ -58,14 +58,14 @@ def load_saved_artifacts():
     global __data_columns
     global __model
 
-    with open("f:/Loan Prediction/Server/artifacts/columns.json", "r") as f:
+    with open("./artifacts/columns.json", "r") as f:
         __data_columns= json.load(f)['data_columns']
         __prop_area= __data_columns[8:]
         __prop_area= [i.split('_')[2] for i in __prop_area]
         __dependents= __data_columns[4:8]
         __dependents= [i.split('_')[1] for i in __dependents]
     
-    with open('f:/Loan Prediction/Server/artifacts/loan_predictor.pickle', 'rb') as f:
+    with open('./artifacts/loan_predictor.pickle', 'rb') as f:
         __model = pickle.load(f)
 
 def get_prop_area():
