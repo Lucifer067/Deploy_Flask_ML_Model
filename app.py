@@ -52,9 +52,9 @@ def get_prediction(gender, married, education, credit_history, dependents, prope
         x[prop_index]= 1
     
     if __model.predict([x])[0] == 0:
-        return "Oops!! Loan will not be granted."
+        return "Oops!! Your application was rejected."
     else:
-        return "Congratulations!!! Loan will be granted."
+        return "Congratulations!!! Your application is approved."
 
 #Loading saved artifacts
 def load_saved_artifacts():
