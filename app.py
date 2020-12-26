@@ -14,7 +14,8 @@ __model= None
 
 #Getting prediction
 def get_prediction(gender, married, education, credit_history, dependents, property_area):
-    
+    global __data_columns
+
     dep= 'dependents_' + dependents
     prop= 'property_area_' + property_area
     try:
@@ -23,7 +24,7 @@ def get_prediction(gender, married, education, credit_history, dependents, prope
     except:
         dep_index= -1
         prop_index= -1
-
+    
     x = np.zeros(len(__data_columns))
 
     if gender == "Male":
