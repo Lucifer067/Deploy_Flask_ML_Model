@@ -14,8 +14,7 @@ __model= None
 
 #Getting prediction
 def get_prediction(gender, married, education, credit_history, dependents, property_area):
-    global __data_columns
-
+    load_saved_artifacts()
     dep= 'dependents_' + dependents
     prop= 'property_area_' + property_area
     try:
