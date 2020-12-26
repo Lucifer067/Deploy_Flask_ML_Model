@@ -99,5 +99,5 @@ def predict():
 
 if __name__ ==  "__main__":
     load_saved_artifacts()
-    port= int(os.environ.get('PORT', 5000))
-    app.run(port= port, debug= True, use_reloader= False)
+    port=int(os.environ.get('PORT',5000))
+    app.run(port=port,debug=True,use_reloader=False)
