@@ -22,7 +22,7 @@ loan_data  = pd.read_csv("https://raw.githubusercontent.com/dphi-official/Datase
 
  
 
-**Data Description**br></br>
+**Data Description**<br></br>
 Loan_ID: A unique ID assigned to every loan applicant</br>
 Gender: Gender of the applicant (Male, Female)</br>
 Married: The marital status of the applicant (Yes, No)</br>
